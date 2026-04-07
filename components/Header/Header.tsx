@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import css from "./Header.module.css"; // Імпорт ваших стилів
+import css from "./Header.module.css";
+import { RiMenu2Fill } from "react-icons/ri";
 
 const NAV_LINKS = [
   { href: "#home", label: "Home" },
@@ -44,7 +45,7 @@ export function Header() {
         {/* Mobile Controls */}
         <div className={css.mobileControls}>
           <button type="button" onClick={toggleMenu} className={css.menuButton}>
-            {isOpen ? "Close" : "Menu"}
+            {isOpen ? <RiMenu2Fill /> : <RiMenu2Fill />}
           </button>
         </div>
 
