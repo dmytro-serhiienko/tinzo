@@ -1,9 +1,9 @@
-/* --- MOBILE FIRST (Базові стилі для телефону) --- */
 .heroSection {
   background: linear-gradient(90deg, #1e0d35, #0f101b);
   width: 100%;
   min-height: 100vh;
   display: flex;
+
   flex-direction: column;
   position: relative;
   overflow: hidden;
@@ -57,6 +57,7 @@
 @media (min-width: 1200px) {
   .heroTitle {
     font-size: clamp(270px, 27vw, 380px);
+    top: 50%;
   }
 
   .heroImage {

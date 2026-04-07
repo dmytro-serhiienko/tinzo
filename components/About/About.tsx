@@ -71,8 +71,10 @@ export default function About() {
         <div className={css.decor5}>TINZO</div>
       </div>
       <div className={css.aboutContainer}>
-        <h1 className={css.aboutTitle}>About</h1>
-        <p className={css.aboutText}>
+        <h1 className={css.aboutTitle} data-anim="about-title">
+          About
+        </h1>
+        <p className={css.aboutText} data-anim="about-text">
           A Brooklyn-based DJ, producer, and curator who has become a true
           phenomenon in the world of contemporary electronic music. She is the
           founder of Book Club Radio — a music platform and event series that
@@ -80,7 +82,7 @@ export default function About() {
           intimate, intellectual experience.
         </p>
       </div>
-      <div className={css.imageWrap}>
+      <div className={css.imageWrap} data-anim="about-image">
         <Image
           className={css.imageAbout}
           src="/about.png"

@@ -7,11 +7,11 @@
   padding: 14px 16px;
   display: flex;
   justify-content: center;
-  pointer-events: none; /* Щоб кліки проходили крізь фон хешеру */
+  pointer-events: none;
 }
 
 .container {
-  pointer-events: all; /* Повертаємо кліки для самої капсули */
+  pointer-events: all;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -32,9 +32,8 @@
   letter-spacing: 0.05em;
 }
 
-/* Десктопна навігація */
 .desktopNav {
-  display: none; /* Ховаємо на мобільних */
+  display: none;
 }
 
 .navList {
@@ -85,10 +84,9 @@
   background: #fff;
 }
 
-/* Мобільне меню */
 .mobileNav {
   position: absolute;
-  top: 70px; /* Відступ від капсули */
+  top: 70px;
   left: 50%;
   transform: translateX(-50%);
   width: calc(100vw - 32px);
@@ -124,14 +122,13 @@
   background: rgba(255, 255, 255, 0.05);
 }
 
-/* Адаптивність */
 @media (min-width: 1024px) {
   .desktopNav {
     display: block;
   }
 
   .mobileControls {
-    display: none; /* Ховаємо кнопку на десктопі */
+    display: none;
   }
 
   .container {

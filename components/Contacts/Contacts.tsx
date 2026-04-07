@@ -9,10 +9,10 @@ export function Contacts() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section className={css.contactsSection}>
+    <section className={css.contactsSection} id="contact">
       <div className={css.container}>
         <div className={css.infoGrid}>
-          <div className={css.column}>
+          <div className={css.column} data-anim="contact-col">
             <h3 className={css.contactsName}>MANAGEMENT</h3>
             <p className={css.contactsMenager}>Michael Kaufman</p>
             <a href="mailto:mk@trax-ent.com" className={css.contactLink}>
@@ -20,7 +20,7 @@ export function Contacts() {
             </a>
           </div>
 
-          <div className={css.column}>
+          <div className={css.column} data-anim="contact-col">
             <h3 className={css.contactsName}>BOOKING</h3>
             <p className={css.contactsMenager}>Jake Bernstein</p>
             <a
@@ -31,7 +31,7 @@ export function Contacts() {
             </a>
           </div>
 
-          <div className={css.column}>
+          <div className={css.column} data-anim="contact-col">
             <h3 className={css.contactsName}>INTERNATIONAL</h3>
             <p className={css.contactsMenager}>Cris Hearn</p>
             <a
@@ -46,6 +46,7 @@ export function Contacts() {
         <div className={css.footerRow}>
           <button
             className={css.reserveBtn}
+            data-anim="contact-btn"
             onClick={() => setIsModalOpen(true)}
           >
             RESERVE NOW

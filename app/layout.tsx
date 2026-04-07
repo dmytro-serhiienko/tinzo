@@ -6,6 +6,8 @@ import About from "@/components/About/About";
 import { Contacts } from "@/components/Contacts/Contacts";
 import { SmoothScroll } from "@/components/ui/SmoothScroll/SmoothScroll";
 import ScrollTop from "@/components/ui/ScrollTop";
+import GsapAnimations from "@/components/ui/GsapAnimations";
+import { Music } from "@/components/Music/Music";
 
 const bebasNeue = Bebas_Neue({
   variable: "--font-bebas-neue",
@@ -30,16 +32,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${bebasNeue.variable} ${unbounded.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">
+    <html lang="en" className={`${bebasNeue.variable} ${unbounded.variable}`}>
+      <body className="">
         <SmoothScroll>
+          <GsapAnimations />
           <Header />
           <main>{children}</main>
           <About />
-          {/* <Gallery /> */}
+          <Music />
           <Contacts />
           <ScrollTop />
         </SmoothScroll>

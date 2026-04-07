@@ -7,7 +7,7 @@ import css from "./Header.module.css"; // Імпорт ваших стилів
 const NAV_LINKS = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "About" },
-  { href: "#gallery", label: "Gallery" },
+  { href: "#music", label: "Music" },
   { href: "https://bookclubstore.com/", label: "Store", target: "_blank" },
   { href: "#contact", label: "Contact" },
 ];
@@ -20,7 +20,7 @@ export function Header() {
 
   return (
     <header className={css.header}>
-      <div className={css.container}>
+      <div className={css.container} data-anim="header">
         {/* Logo */}
         <div className={css.logo}>TINZO</div>
 
