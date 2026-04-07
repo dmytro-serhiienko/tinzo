@@ -10,7 +10,7 @@ export default function Home() {
         </h1>
         <div className={css.heroImageWrap} data-anim="hero-image">
           <Image
-            src="/3000x3000bb-Photoroom_upscayl_6x_upscayl-standard-4x.png"
+            src="/hero.png"
             alt="Tinzo"
             width={500}
             height={500}
