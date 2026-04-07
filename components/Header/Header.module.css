@@ -93,7 +93,7 @@
   max-width: 400px;
   background: rgba(18, 18, 18, 0.95);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 24px;
   overflow: hidden;
   padding: 10px;
@@ -105,6 +105,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 4px;
 }
 
@@ -120,6 +121,10 @@
 
 .mobileNavLink:hover {
   background: rgba(255, 255, 255, 0.05);
+}
+
+.iconBurger {
+  font-size: 16px;
 }
 
 @media (min-width: 1024px) {

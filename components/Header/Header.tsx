@@ -45,7 +45,11 @@ export function Header() {
         {/* Mobile Controls */}
         <div className={css.mobileControls}>
           <button type="button" onClick={toggleMenu} className={css.menuButton}>
-            {isOpen ? <RiMenu2Fill /> : <RiMenu2Fill />}
+            {isOpen ? (
+              <RiMenu2Fill className={css.iconBurger} />
+            ) : (
+              <RiMenu2Fill />
+            )}
           </button>
         </div>
 
