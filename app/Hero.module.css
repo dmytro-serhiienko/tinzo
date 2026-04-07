@@ -11,7 +11,7 @@
 
 .heroTitle {
   position: absolute;
-  top: 28%;
+  top: 22%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #352549;
@@ -39,8 +39,8 @@
 
 .heroImage {
   height: auto;
-  width: 120vw;
-  max-width: 120%;
+  width: 150vw;
+  max-width: 150%;
   display: block;
 }
 
