@@ -1,0 +1,65 @@
+/* --- MOBILE FIRST (Базові стилі для телефону) --- */
+.heroSection {
+  background: linear-gradient(90deg, #1e0d35, #0f101b);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroTitle {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #352549;
+  font-family: var(--font-unbounded);
+  font-weight: 400;
+  opacity: 0.5;
+  z-index: 0;
+
+  font-size: clamp(80px, 25vw, 130px);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.heroImageWrap {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  line-height: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.heroImage {
+  height: auto;
+  width: 85vw;
+  max-width: 100%;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .heroImage {
+    width: clamp(400px, 45vw, 600px);
+  }
+
+  .heroImage {
+    width: clamp(400px, 45vw, 600px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .heroTitle {
+    font-size: clamp(270px, 27vw, 380px);
+  }
+
+  .heroImage {
+    min-width: 666px;
+  }
+}
