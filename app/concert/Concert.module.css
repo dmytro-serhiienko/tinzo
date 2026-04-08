@@ -27,15 +27,6 @@
   align-items: center;
 }
 
-.titleConcert {
-  font-family: var(--font-unbounded);
-  font-weight: 400;
-  font-size: clamp(80px, 15vw, 220px);
-  color: rgba(223, 88, 140, 0.5);
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .sectionConcert {
   width: 100%;
   padding-bottom: 30px;
@@ -55,10 +46,12 @@
 
 .titleConcert {
   font-family: var(--font-unbounded);
-  font-size: clamp(80px, 6vw, 110px);
+  font-size: clamp(38px, 10vw, 120px);
+  color: rgba(223, 88, 140, 0.5);
   text-align: center;
   line-height: 1.1;
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 .cardsContainer {

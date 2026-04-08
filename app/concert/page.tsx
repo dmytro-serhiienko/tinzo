@@ -13,6 +13,18 @@ const concertTinzo = [
     place: "ART CLUB",
     image: "/Concert/con2.jpg",
   },
+  {
+    date: "05.25",
+    city: "DETROIT, MI",
+    place: "MOVEMENT",
+    image: "/Concert/con1.jpg",
+  },
+  {
+    date: "06.07",
+    city: "HOLLYWOOD, CA",
+    place: "OUTLOUD WEHO PRIDE",
+    image: "/Concert/con2.jpg",
+  },
 ];
 
 export default function Concert() {
