@@ -4,7 +4,6 @@ import "./globals.css";
 import { Header } from "@/components/Header/Header";
 import { SmoothScroll } from "@/components/ui/SmoothScroll/SmoothScroll";
 import ScrollTop from "@/components/ui/ScrollTop";
-import GsapAnimations from "@/components/ui/GsapAnimations";
 
 const bebasNeue = Bebas_Neue({
   variable: "--font-bebas-neue",
@@ -32,7 +31,6 @@ export default function RootLayout({
     <html lang="en" className={`${bebasNeue.variable} ${unbounded.variable}`}>
       <body className="">
         <SmoothScroll>
-          <GsapAnimations />
           <Header />
           <main>{children}</main>
           <ScrollTop />
