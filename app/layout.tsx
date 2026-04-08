@@ -2,12 +2,9 @@ import type { Metadata } from "next";
 import { Unbounded, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header/Header";
-import About from "@/components/About/About";
-import { Contacts } from "@/components/Contacts/Contacts";
 import { SmoothScroll } from "@/components/ui/SmoothScroll/SmoothScroll";
 import ScrollTop from "@/components/ui/ScrollTop";
 import GsapAnimations from "@/components/ui/GsapAnimations";
-import { Music } from "@/components/Music/Music";
 
 const bebasNeue = Bebas_Neue({
   variable: "--font-bebas-neue",
@@ -38,9 +35,6 @@ export default function RootLayout({
           <GsapAnimations />
           <Header />
           <main>{children}</main>
-          <About />
-          <Music />
-          <Contacts />
           <ScrollTop />
         </SmoothScroll>
       </body>

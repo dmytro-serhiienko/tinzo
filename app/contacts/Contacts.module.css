@@ -1,0 +1,181 @@
+.introContacts {
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("/Contacts/back.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introTitle {
+  font-family: var(--font-unbounded);
+  font-weight: 400;
+  font-size: clamp(60px, 15vw, 220px);
+  color: rgba(253, 165, 125, 0.5);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sectionContacts {
+  min-height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.formWrap {
+  width: 100%;
+  max-width: 600px;
+}
+
+.formTitle {
+  font-family: var(--font-unbounded);
+  font-weight: 400;
+  font-size: clamp(28px, 6vw, 48px);
+  color: #fff;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-family: var(--font-bebas-neue);
+  font-size: 18px;
+  color: #fda57d80;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.input,
+.select {
+  font-family: var(--font-bebas-neue);
+  font-size: 18px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  padding: 14px 16px;
+  outline: none;
+  transition:
+    border-color 0.3s ease,
+    background-color 0.3s ease;
+  width: 100%;
+  appearance: none;
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.input:focus,
+.select:focus {
+  border-color: rgba(253, 202, 125, 0.6);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.select option {
+  background-color: #1a1a2e;
+  color: #fff;
+}
+
+.submitBtn {
+  font-family: var(--font-unbounded);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 16px 30px;
+  margin-top: 10px;
+  background-color: rgba(253, 202, 125, 0.85);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+  align-self: flex-start;
+}
+
+.submitBtn:hover {
+  background-color: rgba(235, 199, 144, 0.85);
+  color: #171717;
+  transform: scale(1.03);
+}
+
+@media screen and (min-width: 768px) {
+  .sectionContacts {
+    padding: 80px 40px;
+  }
+
+  .formWrap {
+    max-width: 700px;
+  }
+
+  .label {
+    font-size: 20px;
+  }
+
+  .input,
+  .select {
+    font-size: 20px;
+    padding: 16px 20px;
+  }
+
+  .submitBtn {
+    font-size: 18px;
+    padding: 18px 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sectionContacts {
+    padding: 100px 60px;
+  }
+
+  .formWrap {
+    max-width: 800px;
+  }
+
+  .form {
+    gap: 28px;
+  }
+
+  .formTitle {
+    margin-bottom: 50px;
+  }
+
+  .label {
+    font-size: 22px;
+  }
+
+  .input,
+  .select {
+    font-size: 22px;
+    padding: 18px 24px;
+  }
+
+  .submitBtn {
+    font-size: 20px;
+    padding: 20px 50px;
+  }
+}

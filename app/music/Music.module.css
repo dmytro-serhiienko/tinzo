@@ -1,0 +1,77 @@
+.musicIntro {
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/Music/music.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleMusic {
+  font-family: var(--font-unbounded);
+  font-weight: 400;
+  font-size: clamp(80px, 15vw, 220px);
+  color: rgba(223, 88, 140, 0.5);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.videoWrapper iframe {
+  pointer-events: none;
+}
+.musicSection {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.videoGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .videoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .musicSection {
+    max-width: 1600px;
+  }
+
+  .videoGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}

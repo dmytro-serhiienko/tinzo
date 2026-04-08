@@ -6,11 +6,12 @@ import css from "./Header.module.css";
 import { RiMenu2Fill } from "react-icons/ri";
 
 const NAV_LINKS = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#music", label: "Music" },
+  { href: "/", label: "Home" },
+  { href: "/bio", label: "Bio" },
+  { href: "/concert", label: "Concert" },
+  { href: "/music", label: "Music" },
   { href: "https://bookclubstore.com/", label: "Store", target: "_blank" },
-  { href: "#contact", label: "Contact" },
+  { href: "/contacts", label: "Contact" },
 ];
 
 export function Header() {
@@ -23,7 +24,9 @@ export function Header() {
     <header className={css.header}>
       <div className={css.container} data-anim="header">
         {/* Logo */}
-        <div className={css.logo}>TINZO</div>
+        <Link href="/" className={css.logo}>
+          TINZO
+        </Link>
 
         {/* Desktop Menu */}
         <nav className={css.desktopNav}>

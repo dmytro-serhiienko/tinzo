@@ -1,0 +1,142 @@
+.introConcert {
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/Concert/backCon.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleConcert {
+  font-family: var(--font-unbounded);
+  font-weight: 400;
+  font-size: clamp(80px, 15vw, 220px);
+  color: rgba(223, 88, 140, 0.5);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sectionConcert {
+  width: 100%;
+  padding-bottom: 30px;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.globalWrap {
+  padding: 0 20px;
+  margin: 30px auto;
+  max-width: 1440px;
+}
+
+.titleConcert {
+  font-family: var(--font-unbounded);
+  font-size: clamp(80px, 6vw, 110px);
+  text-align: center;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.wrapConcert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+  padding: 40px 20px;
+  background-color: rgba(47, 47, 47, 0.5);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+/* --- ТАБЛЕТКА (768px) --- */
+@media screen and (min-width: 768px) {
+  .cardsContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .titleConcert {
+    margin-bottom: 50px;
+  }
+
+  .wrapConcert {
+    min-height: 350px;
+  }
+}
+
+/* --- ДЕСКТОП (1200px) --- */
+@media screen and (min-width: 1200px) {
+  .cardsContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  .titleConcert {
+    font-size: clamp(150px, 6vw, 300px);
+    margin-bottom: 60px;
+  }
+
+  .globalWrap {
+    padding: 0 50px;
+  }
+
+  .wrapConcert {
+    padding: 60px 30px;
+  }
+}
+
+/* Стилі для тексту та кнопки залишаються без змін */
+.dateConcert {
+  font-family: var(--font-unbounded);
+  font-size: clamp(36px, 4vw, 53px);
+}
+.cityConcert {
+  font-family: var(--font-unbounded);
+  font-size: clamp(30px, 4vw, 43px);
+}
+.placeConcert {
+  font-family: var(--font-unbounded);
+  font-size: clamp(24px, 4vw, 36px);
+}
+.buyTickets {
+  font-family: var(--font-unbounded);
+  font-size: clamp(18px, 4vw, 24px);
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #463060;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #463060;
+    color: #fff;
+    transform: scale(1.05);
+  }
+}
