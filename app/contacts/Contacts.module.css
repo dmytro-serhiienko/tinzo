@@ -1,12 +1,27 @@
 .introContacts {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introBgLayer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
   background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
     url("/Contacts/back.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
 
-  min-height: 100vh;
+.introInner {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;

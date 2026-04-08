@@ -9,7 +9,11 @@ import { RiSoundcloudFill } from "react-icons/ri";
 export default function Home() {
   return (
     <>
-      <div className={css.decorLinks}>
+      <div
+        className={css.decorLinks}
+        data-anim="reveal"
+        data-reveal="left"
+      >
         <Link
           className={css.decor1}
           href="https://www.instagram.com/tin.zo/"

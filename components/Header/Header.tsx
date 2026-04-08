@@ -21,8 +21,8 @@ export function Header() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <header className={css.header}>
-      <div className={css.container} data-anim="header">
+    <header className={css.header} data-anim="header">
+      <div className={css.container}>
         {/* Logo */}
         <Link href="/" className={css.logo}>
           TINZO

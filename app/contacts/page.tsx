@@ -6,11 +6,20 @@ export default function Contacts() {
   return (
     <>
       <section className={css.introContacts}>
-        <h1 className={css.introTitle}>Contact</h1>
+        <div className={css.introBgLayer} data-anim="page-visual" aria-hidden />
+        <div className={css.introInner}>
+          <h1 className={css.introTitle} data-anim="page-title">
+            Contact
+          </h1>
+        </div>
       </section>
 
       <section className={css.sectionContacts}>
-        <div className={css.formWrap}>
+        <div
+          className={css.formWrap}
+          data-anim="reveal"
+          data-reveal="right"
+        >
           <h2 className={css.formTitle}>Book Tinzo</h2>
 
           <form className={css.form}>

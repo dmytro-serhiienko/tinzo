@@ -3,6 +3,7 @@ import { Unbounded, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/Header/Header";
 import { SmoothScroll } from "@/components/ui/SmoothScroll/SmoothScroll";
+import { SiteGsapAnimations } from "@/components/ui/SiteGsapAnimations";
 import ScrollTop from "@/components/ui/ScrollTop";
 
 const bebasNeue = Bebas_Neue({
@@ -31,6 +32,7 @@ export default function RootLayout({
     <html lang="en" className={`${bebasNeue.variable} ${unbounded.variable}`}>
       <body className="">
         <SmoothScroll>
+          <SiteGsapAnimations />
           <Header />
           <main>{children}</main>
           <ScrollTop />

@@ -32,8 +32,11 @@ export default function Music() {
   return (
     <>
       <section className={css.musicIntro}>
+        <div className={css.introBgLayer} data-anim="page-visual" aria-hidden />
         <div className={css.introWrap}>
-          <h1 className={css.titleMusic}>Music</h1>
+          <h1 className={css.titleMusic} data-anim="page-title">
+            Music
+          </h1>
         </div>
       </section>
 
@@ -43,7 +46,8 @@ export default function Music() {
             <div
               key={index}
               className={css.videoWrapper}
-              data-anim="video-item"
+              data-anim="reveal"
+              data-reveal={index % 2 === 0 ? "left" : "right"}
             >
               <iframe
                 src={item.src}

@@ -19,18 +19,23 @@ export default function Concert() {
   return (
     <>
       <section className={css.introConcert}>
+        <div className={css.introBgLayer} data-anim="page-visual" aria-hidden />
         <div className={css.introWrap}>
-          <h1 className={css.titleConcert}>Next Stops</h1>
+          <h1 className={css.titleConcert} data-anim="page-title">
+            Next Stops
+          </h1>
         </div>
       </section>
 
       <section className={css.sectionConcert}>
         <div className={css.globalWrap}>
           <div className={css.cardsContainer}>
-            {concertTinzo.map((concert) => (
+            {concertTinzo.map((concert, index) => (
               <div
                 key={concert.date}
                 className={css.wrapConcert}
+                data-anim="reveal"
+                data-reveal={index % 2 === 0 ? "left" : "right"}
                 style={{
                   backgroundImage: `linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(${concert.image})`,
                 }}
