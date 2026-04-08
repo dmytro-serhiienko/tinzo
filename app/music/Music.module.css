@@ -13,7 +13,7 @@
   z-index: 0;
   background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/Music/music.png");
+    url("/Music/music.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -36,9 +36,6 @@
   text-align: center;
 }
 
-.videoWrapper iframe {
-  pointer-events: none;
-}
 .musicSection {
   padding: 60px 20px;
   max-width: 1200px;
